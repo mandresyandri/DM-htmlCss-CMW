@@ -20,7 +20,18 @@ body {
 }
 
 .logo:hover {
-    background-color: #DC3535;
+    background-color: #f1c40f;
+    animation-name: changementDeCouleur;
+    animation-duration: 5s;
+}
+
+@keyframes changementDeCouleur {
+    from{
+        background-color: #f1c40f;
+    }
+    to{
+        background-color: #852999;
+    }
 }
 
 .banniere {
@@ -33,6 +44,27 @@ body {
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
+    cursor: pointer; /* Ajout pour l'UI */
+}
+
+.banniere:active {
+    color: white;
+    animation-name: texteCouleur;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes texteCouleur {
+    from {
+        color: white;
+    }
+    50% {
+        color: #808080;
+    }
+    to {
+        color: black;
+    }
+
 }
 
 .navigation {
@@ -44,6 +76,25 @@ body {
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
+}
+
+.navigation:hover {
+    background-color: #e74c3c;
+    color: white;
+    animation-name: couleurEtTexte;
+    animation-duration: 5s;
+}
+
+@keyframes couleurEtTexte {
+    from {
+        background-color: #e74c3c;
+        color: white;
+    }
+    to {
+        background-color: white;
+        color: black;
+    }
+
 }
 
 .slider {
@@ -113,7 +164,7 @@ body {
     
 }
 
-.articleTroisColonneUn {
+.article3Colonne1 {
     height: 200px;
     width: 25%;
     color: white;
@@ -126,7 +177,7 @@ body {
     text-transform: uppercase;
 }
 
-.articleTroisColonneDeux {
+.article3Colonne2 {
     height: 200px;
     width: 25%;
     background-color: #d35400;
@@ -147,5 +198,28 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+p {
     text-transform: uppercase;
+    position: relative;
+    animation-name: mouvement, pause;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mouvement {
+    from {
+        top: -60px;
+    }
+    50% {
+        top: 0px;
+    }
+    to {
+        top: 70px;
+    }
+}
+
+p:hover {
+    animation-play-state: paused;
 }
