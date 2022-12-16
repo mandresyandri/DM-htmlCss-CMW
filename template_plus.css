@@ -19,6 +19,10 @@ body {
     text-transform: uppercase;
 }
 
+.logo:hover {
+    background-color: #DC3535;
+}
+
 .banniere {
     display: flex;
     background-color: #f39c12;
