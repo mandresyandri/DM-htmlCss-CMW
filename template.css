@@ -1,0 +1,134 @@
+body {
+    font-size: 30px;
+}
+
+.logoEtBanniere {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    display: flex;
+    background-color: yellow;
+    color:white;
+    height: 100px;
+    width: 20%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.banniere {
+    display: flex;
+    background-color: orange;
+    color: white;
+    height: 100px;
+    width: 80%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation {
+    height: 50px;
+    width: 100%;
+    background-color: red;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider {
+    height: 200px;
+    width: 100%;
+    background-color: blue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.edito {
+    display: flex;
+    flex-direction: row;
+}
+
+.editoUn {
+    height: 100px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: greenyellow;
+}
+
+.editoDeux {
+    height: 100px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+}
+
+.article {
+    display: flex;
+    flex-direction: row;
+}
+
+.articleUn {
+    height: 200px;
+    width: 25%;
+    color: white;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.articleDeux {
+    height: 200px;
+    width: 25%;
+    color: white;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.articleTroisColonneUn {
+    height: 200px;
+    width: 25%;
+    color: white;
+    background-color: orangered;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: dotted 2px grey;
+    box-sizing: border-box;
+}
+
+.articleTroisColonneDeux {
+    height: 200px;
+    width: 25%;
+    background-color: orangered;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: dotted 2px grey;
+    box-sizing: border-box;
+}
+
+.footer {
+    height: 200px;
+    width: 100%;
+    background-color: violet;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
