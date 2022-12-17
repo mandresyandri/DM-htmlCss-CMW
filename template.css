@@ -109,7 +109,7 @@ body {
     
 }
 
-.articleTroisColonneUn {
+.article3Colonne1, .article3Colonne2 {
     height: 200px;
     width: 25%;
     color: white;
@@ -122,18 +122,20 @@ body {
     text-transform: uppercase;
 }
 
-.articleTroisColonneDeux {
-    height: 200px;
-    width: 25%;
-    background-color: #d35400;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: dotted 2px grey;
-    box-sizing: border-box;
-    text-transform: uppercase;
-}
+/* Redondant => Cf. README.md*/
+
+/*.article3Colonne2 {*/
+/*    height: 200px;*/
+/*    width: 25%;*/
+/*    background-color: #d35400;*/
+/*    color: white;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    border: dotted 2px grey;*/
+/*    box-sizing: border-box;*/
+/*    text-transform: uppercase;*/
+/*}*/
 
 .footer {
     height: 200px;

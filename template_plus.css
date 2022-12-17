@@ -17,21 +17,12 @@ body {
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
+    cursor: pointer; /* Ajout pour l'UI */
+    transition: background-color linear 5s;
 }
 
 .logo:hover {
-    background-color: #f1c40f;
-    animation-name: changementDeCouleur;
-    animation-duration: 5s;
-}
-
-@keyframes changementDeCouleur {
-    from{
-        background-color: #f1c40f;
-    }
-    to{
-        background-color: #852999;
-    }
+    background-color: #852999
 }
 
 .banniere {
@@ -45,27 +36,32 @@ body {
     justify-content: center;
     text-transform: uppercase;
     cursor: pointer; /* Ajout pour l'UI */
+    transition: color 5s;
 }
 
 .banniere:active {
-    color: white;
-    animation-name: texteCouleur;
-    animation-duration: 2s;
-    animation-timing-function: linear;
+    color: black;
 }
 
-@keyframes texteCouleur {
-    from {
-        color: white;
-    }
-    50% {
-        color: #808080;
-    }
-    to {
-        color: black;
-    }
+/* Bout de code suivant => première idée avortée =>  cf. README.md */
+/*.banniere:active {*/
+/*    color: white;*/
+/*    animation-name: texteCouleur;*/
+/*    animation-duration: 2s;*/
+/*    animation-timing-function: linear;*/
+/*}*/
 
-}
+/*@keyframes texteCouleur {*/
+/*    from {*/
+/*        color: white;*/
+/*    }*/
+/*    50% {*/
+/*        color: #808080;*/
+/*    }*/
+/*    to {*/
+/*        color: black;*/
+/*    }*/
+/*}*/
 
 .navigation {
     height: 50px;
@@ -76,25 +72,15 @@ body {
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
+    cursor: pointer; /* Ajout pour l'UI */
+    transition-property: background-color, color;
+    transition-duration: 5s, 5s;
+    transition-timing-function: linear, ease-in;
 }
 
 .navigation:hover {
-    background-color: #e74c3c;
-    color: white;
-    animation-name: couleurEtTexte;
-    animation-duration: 5s;
-}
-
-@keyframes couleurEtTexte {
-    from {
-        background-color: #e74c3c;
-        color: white;
-    }
-    to {
-        background-color: white;
-        color: black;
-    }
-
+    background-color: white;
+    color: black;
 }
 
 .slider {
@@ -164,7 +150,7 @@ body {
     
 }
 
-.article3Colonne1 {
+.article3Colonne1, .article3Colonne2 {
     height: 200px;
     width: 25%;
     color: white;
@@ -177,18 +163,19 @@ body {
     text-transform: uppercase;
 }
 
-.article3Colonne2 {
-    height: 200px;
-    width: 25%;
-    background-color: #d35400;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: dotted 2px grey;
-    box-sizing: border-box;
-    text-transform: uppercase;
-}
+/* Pistes de recherches => Optimisation du code cf. README.md*/
+/*.article3Colonne2 {*/
+/*    height: 200px;*/
+/*    width: 25%;*/
+/*    color: white;*/
+/*    background-color: #d35400;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    border: dotted 2px grey;*/
+/*    box-sizing: border-box;*/
+/*    text-transform: uppercase;*/
+/*}*/
 
 .footer {
     height: 200px;
@@ -200,7 +187,7 @@ body {
     align-items: center;
 }
 
-p {
+.footer > p {
     text-transform: uppercase;
     position: relative;
     animation-name: mouvement, pause;
@@ -213,13 +200,14 @@ p {
         top: -60px;
     }
     50% {
-        top: 0px;
+        top: 0;
     }
     to {
         top: 70px;
     }
 }
 
-p:hover {
+/* Stopper l'animation texte au passage de la sourie */
+.footer > p:hover {
     animation-play-state: paused;
 }
