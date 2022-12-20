@@ -140,21 +140,32 @@ body {
     flex-direction: row;
 }
 
+.partOne {
+    display: flex;
+    width: 66.66%;
+    flex-direction: row;
+}
+
+.partTwo {
+    display: flex;
+    width: 33.33%;
+    flex-direction: row;
+}
+
 .articleUn {
     height: 200px;
-    width: 25%;
+    width: 50%;
     color: white;
     background-color: #f39c12;
     display: flex;
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
-
 }
 
 .articleDeux {
     height: 200px;
-    width: 25%;
+    width: 50%;
     color: white;
     background-color: #e67e22;
     display: flex;
@@ -164,9 +175,9 @@ body {
     
 }
 
-.article3Colonne1 {
+.articleTroisColonneUn {
     height: 200px;
-    width: 25%;
+    width: 50%;
     color: white;
     background-color: #d35400;
     display: flex;
@@ -177,9 +188,9 @@ body {
     text-transform: uppercase;
 }
 
-.article3Colonne2 {
+.articleTroisColonneDeux {
     height: 200px;
-    width: 25%;
+    width: 50%;
     background-color: #d35400;
     color: white;
     display: flex;
